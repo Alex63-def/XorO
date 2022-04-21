@@ -47,7 +47,9 @@ void SwitchStartMenu() {
 			system("cls");
 			SwitchSettingMenu();
 			break;
-		//case PandPC:
+		/*case PandPC:
+			SwitchSettingMenu();
+			break;*/
 		case Back1:
 			system("cls");
 			return;
