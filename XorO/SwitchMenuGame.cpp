@@ -4,6 +4,8 @@
 #include "CleaningPositions.h"
 #include "StartGame.h"
 #include "ShowField.h"
+#include "SaveGame.h"
+#include "LoadGame.h"
 
 void SwitchMainMenu() {
 
@@ -18,11 +20,12 @@ void SwitchMainMenu() {
 			system("cls");
 			SwitchStartMenu();
 			break;
-		//case Loading:
-		case Exit:
-			system("cls");
-			ExitGame = true;
+		case Loading:
+			Load();
+			StartGame();
 			break;
+		case Exit:
+			exit(0);
 		default:
 			system("cls");
 			cout << endl;
@@ -158,6 +161,11 @@ void SwitchPauseMenu() {
 			return;
 			//StartGame();
 			//break;
+		case SaveGame:
+			system("cls");
+			Save();
+			cout << "\n\tИгра Сохранена!" << endl;
+			break;
 		case NewGame:
 			system("cls");
 			SwitchStartMenu();

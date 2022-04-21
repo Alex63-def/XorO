@@ -16,6 +16,6 @@ int main() {
 	SetConsoleOutputCP(1251);
 
 	SwitchMainMenu();
-
+	
 	return 0;
 }

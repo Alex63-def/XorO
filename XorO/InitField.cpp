@@ -57,3 +57,14 @@ void InitRandField() {
 		delete[] Field.fieldGame[i];
 	delete[] Field.fieldGame;
 }
+
+void InitLoadField() {
+
+	Field.fieldGame = new char* [Field.height];
+	for (int i = 0; i < Field.height; i++)
+		Field.fieldGame[i] = new char[Field.width];
+
+	for (int Oy = 0; Oy < Field.height; Oy++)
+		for (int cell = 0; cell < Field.width; cell++)
+			Field.fieldGame[Oy][cell] = Empty;
+}

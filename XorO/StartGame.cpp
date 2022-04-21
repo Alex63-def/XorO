@@ -4,6 +4,8 @@
 #include "CheckPosition.h"
 #include "VictoryGame.h"
 
+bool PlayerMove = true;
+
 void StartGame() {
 
 	string VictoryPlayer{};
@@ -19,8 +21,14 @@ void StartGame() {
 		while (!ExitGame) {
 
 			moveX = true;
+
+			if (!PlayerMove)
+				moveX = false;
+
 			while (moveX)
 			{
+				PlayerMove = true;
+
 				ShowField();
 
 				Temp = true;

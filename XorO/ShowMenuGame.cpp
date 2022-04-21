@@ -29,8 +29,9 @@
 	void ShowPauseMenu() {
 		cout << endl << endl;
 		cout << "\t1   Продолжить игру" << endl;
-		cout << "\t2  Начать новую игру" << endl;
-		cout << "\t3    Начать заново" << endl;
-		cout << "\t4    Главное меню" << endl << endl;
+		cout << "\t2   Сохранить игру" << endl;
+		cout << "\t3  Начать новую игру" << endl;
+		cout << "\t4    Начать заново" << endl;
+		cout << "\t5    Главное меню" << endl << endl;
 		cout << "\t  Выберите пунк меню: ";
 	}

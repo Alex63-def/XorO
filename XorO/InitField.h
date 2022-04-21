@@ -14,5 +14,6 @@
 void InitDefaultField();
 void InitMyField();
 void InitRandField();
+void InitLoadField();
 
 #endif // !_INIT_FIELD_H_

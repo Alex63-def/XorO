@@ -10,7 +10,7 @@ extern int Paragraph;
 enum MainMenu { Start = 1, Loading, Exit };
 enum StartMenu1 { PandP = 1, PandPC, Back1 };
 enum SettingMenu { DefaultSetting = 1, MySetting, RandSetting, Back2 };
-enum StartMenu2 { ContinueGame = 1, NewGame, Restart, MainMenu };
+enum PauseMenu { ContinueGame = 1, SaveGame, NewGame, Restart, MainMenu };
 
 void SwitchMainMenu();
 void SwitchStartMenu();
